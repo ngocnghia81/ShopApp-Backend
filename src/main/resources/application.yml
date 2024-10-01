@@ -1,0 +1,73 @@
+server:
+  port: 8088
+
+api:
+  prefix: /api/v1
+
+jwt:
+  expirationTime: 10 #2592000
+  refreshExpirationTime: 5184000
+  secretKey: E943C910F34AE595B324976A359E02DC3A47D685843FF8A104205F0410C1B613
+  clockSkew: 30000
+
+firebase:
+  storage:
+    bucket: shopappcloud
+
+cloudinary:
+  cloud-name: dk8jx52fy
+  api-key: 194169322647358
+  api-secret: 94eN-ily4NOmQFEd4K-RBLiDqYE
+
+spring:
+  application:
+    name: shopapp-server
+  datasource:
+    url: jdbc:postgresql://localhost:5432/shopapp
+    username: postgres
+    password: 5612
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  servlet:
+    messages:
+      multipart:
+        max-file-size: 10MB
+        max-request-size: 10MB
+      basename: i18/messages
+      encoding: UTF-8
+      default-locale: en
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  flyway:
+    locations: classpath:/dev/db/migration,classpath:db/migration
+    baseline-on-migrate: true
+    baseline-version: 1
+    validate-on-migrate: true
+
+
+
+#healthcheck:
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      base-path: /api/v1/actuator
+      exposure:
+        include: "health, info"
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+  show-actuator: true

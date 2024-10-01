@@ -1,0 +1,658 @@
+2024-10-02 00:01:39.91 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-02 00:01:39.94 [main] INFO  c.t.s.ShopappServerApplication - Starting ShopappServerApplication using Java 17.0.11 with PID 93681 (/home/tripleng/Workspace/Study/Code/shopapp/Shopapp/shopapp-server/target/classes started by tripleng in /home/tripleng/Workspace/Study/Code/shopapp/Shopapp/shopapp-server)
+2024-10-02 00:01:39.94 [main] INFO  c.t.s.ShopappServerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-02 00:01:40.66 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-02 00:01:40.66 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-02 00:01:40.75 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 85 ms. Found 9 JPA repository interfaces.
+2024-10-02 00:01:40.76 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-02 00:01:40.76 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.SocialAccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.TokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 00:01:40.77 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2024-10-02 00:01:41.26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8088 (http)
+2024-10-02 00:01:41.27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-10-02 00:01:41.27 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-02 00:01:41.27 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-10-02 00:01:41.30 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-02 00:01:41.30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1337 ms
+2024-10-02 00:01:41.49 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-02 00:01:41.56 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4888425d
+2024-10-02 00:01:41.56 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-02 00:01:41.58 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/shopapp (PostgreSQL 16.3)
+2024-10-02 00:01:41.62 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.019s)
+2024-10-02 00:01:41.63 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.3
+2024-10-02 00:01:41.63 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2024-10-02 00:01:41.69 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-02 00:01:41.73 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-10-02 00:01:41.75 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-02 00:01:41.90 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-02 00:01:41.93 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-02 00:01:42.67 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-02 00:01:42.67 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-02 00:01:43.07 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/api/v1/actuator'
+2024-10-02 00:01:43.11 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-02 00:01:43.18 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-02 00:01:43.72 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7584b20d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3d26e7ba, org.springframework.security.web.context.SecurityContextHolderFilter@2cf3882d, org.springframework.security.web.header.HeaderWriterFilter@5a7ec872, org.springframework.web.filter.CorsFilter@708d7fb7, org.springframework.security.web.authentication.logout.LogoutFilter@71a25687, com.tripleng.shopappserver.filters.JwtTokenFilter@60dd53e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25db0f54, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@afb7791, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@786ce57e, org.springframework.security.web.access.ExceptionTranslationFilter@257d8340, org.springframework.security.web.access.intercept.AuthorizationFilter@6e12352d]
+2024-10-02 00:01:44.18 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-10-02 00:01:44.19 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8088 (http) with context path ''
+2024-10-02 00:01:44.20 [main] INFO  c.t.s.ShopappServerApplication - Started ShopappServerApplication in 4.478 seconds (process running for 5.015)
+2024-10-02 00:01:44.57 [RMI TCP Connection(2)-192.168.22.240] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-02 00:01:44.57 [RMI TCP Connection(2)-192.168.22.240] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-02 00:01:44.58 [RMI TCP Connection(2)-192.168.22.240] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-02 00:04:12.59 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:04:12.59 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:04:12.59 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:04:12.59 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:04:12.65 [http-nio-8088-exec-1] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:04:12.67 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:04:12.70 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:08:15.14 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:08:15.14 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:08:15.14 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:08:15.14 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:08:15.15 [http-nio-8088-exec-5] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:08:15.15 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:08:15.15 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:08:28.85 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:08:28.85 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:08:28.85 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:08:28.85 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:08:28.86 [http-nio-8088-exec-7] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:08:28.86 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:08:28.86 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:08:29.99 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:08:29.99 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:08:29.99 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:08:29.99 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:08:29.99 [http-nio-8088-exec-9] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:08:29.99 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:08:29.99 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:09:17.57 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:09:17.57 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:09:17.57 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:09:17.57 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:09:17.58 [http-nio-8088-exec-1] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:09:17.58 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:09:17.58 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:09:20.20 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:09:20.20 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:09:20.20 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:09:20.20 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:09:20.20 [http-nio-8088-exec-3] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:09:20.20 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:09:20.20 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:09:21.32 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:09:21.32 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:09:21.32 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:09:21.32 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:09:21.33 [http-nio-8088-exec-6] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:09:21.33 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:09:21.33 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:09:21.91 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:09:21.91 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:09:21.91 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:09:21.91 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:09:21.92 [http-nio-8088-exec-8] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:09:21.92 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:09:21.92 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:09:22.24 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:09:22.24 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:09:22.24 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:09:22.24 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:09:22.24 [http-nio-8088-exec-9] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:09:22.24 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:09:22.24 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:09:30.17 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:09:30.17 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:09:30.17 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:09:30.17 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:09:30.17 [http-nio-8088-exec-2] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:09:30.17 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:09:30.17 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:20:01.38 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:20:01.38 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:20:01.38 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:20:01.38 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:20:01.39 [http-nio-8088-exec-6] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:20:01.39 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:20:01.39 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:22:40.99 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:22:40.99 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:22:40.99 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:22:40.99 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:22:40.99 [http-nio-8088-exec-9] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:22:41.00 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:22:41.00 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:22:42.61 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:22:42.61 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:22:42.61 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:22:42.61 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:22:42.62 [http-nio-8088-exec-2] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:22:42.62 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:22:42.62 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:22:43.46 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:22:43.46 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:22:43.46 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:22:43.46 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:22:43.46 [http-nio-8088-exec-4] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:22:43.46 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:22:43.46 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:24:14.15 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:24:14.15 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:24:14.15 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:24:14.15 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:24:14.15 [http-nio-8088-exec-8] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:24:14.15 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:24:14.16 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:24:33.31 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:24:33.31 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:24:33.31 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:24:33.31 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:24:33.31 [http-nio-8088-exec-10] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:24:33.31 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:24:33.31 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:25:56.20 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:25:56.20 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:25:56.20 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:25:56.20 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:25:56.21 [http-nio-8088-exec-4] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:25:56.21 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:25:56.21 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:26:22.34 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:26:22.34 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:26:22.34 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:26:22.34 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:26:22.35 [http-nio-8088-exec-5] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:26:22.35 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:26:22.35 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:30:26.15 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:30:26.15 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:30:26.15 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:30:26.15 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:30:26.16 [http-nio-8088-exec-10] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:30:26.16 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:30:26.16 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:31:02.01 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:31:02.01 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:31:02.01 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:31:02.01 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:31:02.01 [http-nio-8088-exec-1] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:31:02.01 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:31:02.01 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:31:44.20 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:31:44.20 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:31:44.20 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:31:44.20 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:31:44.20 [http-nio-8088-exec-4] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:31:44.20 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:31:44.21 [http-nio-8088-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 01000
+2024-10-02 00:31:44.21 [http-nio-8088-exec-3] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - database "shopapp" has a collation version mismatch
+2024-10-02 00:31:44.21 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:32:09.76 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:32:09.76 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:32:09.76 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:32:09.76 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:32:09.77 [http-nio-8088-exec-6] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:32:09.77 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:32:09.78 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:32:35.53 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:32:35.53 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:32:35.53 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:32:35.53 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:32:35.53 [http-nio-8088-exec-8] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:32:35.53 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:32:35.54 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:32:43.61 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:32:43.61 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:32:43.61 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:32:43.61 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:32:43.61 [http-nio-8088-exec-9] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:32:43.61 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:32:43.61 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:39:21.29 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:39:21.29 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:39:21.29 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:39:21.29 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:39:21.29 [http-nio-8088-exec-4] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:39:21.30 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:39:21.30 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:39:23.01 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:39:23.01 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:39:23.01 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:39:23.01 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:39:23.01 [http-nio-8088-exec-6] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:39:23.01 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:39:23.01 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:39:27.96 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:39:27.96 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:39:27.96 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:39:27.96 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:39:27.97 [http-nio-8088-exec-8] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:39:27.97 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:39:27.97 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:47:48.34 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:47:48.34 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:47:48.34 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:47:48.34 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:47:48.34 [http-nio-8088-exec-1] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:47:48.34 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:47:48.34 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:49:36.97 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:49:36.97 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:49:36.97 [http-nio-8088-exec-6] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:49:36.97 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:49:37.12 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /favicon.ico
+2024-10-02 00:51:04.36 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:51:04.36 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:51:04.36 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:51:04.36 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:51:04.36 [http-nio-8088-exec-7] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:51:04.36 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:51:04.36 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:51:06.16 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:51:06.16 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:51:06.16 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:51:06.16 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:51:06.16 [http-nio-8088-exec-10] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:51:06.16 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:51:06.16 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:51:35.97 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:51:35.97 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:51:35.97 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:51:35.97 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:51:35.97 [http-nio-8088-exec-2] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:51:35.97 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:51:35.97 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:51:36.68 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:51:36.68 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:51:36.68 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:51:36.68 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:51:36.68 [http-nio-8088-exec-4] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:51:36.69 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:51:36.69 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:51:37.30 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:51:37.30 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:51:37.30 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:51:37.30 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:51:37.31 [http-nio-8088-exec-5] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:51:37.31 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:51:37.31 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:51:37.94 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:51:37.94 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:51:37.94 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:51:37.94 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:51:37.94 [http-nio-8088-exec-7] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:51:37.94 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:51:37.94 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:51:38.58 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:51:38.58 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:51:38.58 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:51:38.58 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:51:38.59 [http-nio-8088-exec-10] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:51:38.59 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:51:38.59 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:51:43.97 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:51:43.97 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:51:43.97 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:51:43.97 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:51:43.98 [http-nio-8088-exec-2] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:51:43.98 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:51:43.98 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:54:41.13 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:54:41.13 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:54:41.13 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:54:41.13 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:54:41.13 [http-nio-8088-exec-8] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:54:41.13 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:54:41.13 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:54:46.91 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:54:46.91 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:54:46.91 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:54:46.91 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:54:46.92 [http-nio-8088-exec-7] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:54:46.92 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:54:46.92 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:56:02.37 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:56:02.37 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:56:02.37 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:56:02.37 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:56:02.38 [http-nio-8088-exec-2] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:56:02.38 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:56:02.38 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:57:11.25 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:57:11.25 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:57:11.25 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:57:11.25 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:57:11.25 [http-nio-8088-exec-8] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:57:11.25 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:57:11.25 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:57:44.20 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:57:44.20 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:57:44.20 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:57:44.20 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:57:44.20 [http-nio-8088-exec-7] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:57:44.20 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:57:44.20 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 00:57:53.53 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 00:57:53.53 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 00:57:53.53 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 00:57:53.53 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 00:57:53.54 [http-nio-8088-exec-1] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 00:57:53.54 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 00:57:53.54 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:00:59.43 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:00:59.43 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:00:59.43 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:00:59.43 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:00:59.43 [http-nio-8088-exec-4] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:00:59.43 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:00:59.43 [http-nio-8088-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 01000
+2024-10-02 01:00:59.43 [http-nio-8088-exec-6] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - database "shopapp" has a collation version mismatch
+2024-10-02 01:00:59.43 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:02:02.08 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:02:02.08 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:02:02.09 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:02:02.09 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:02:02.09 [http-nio-8088-exec-7] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:02:02.09 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:02:02.10 [http-nio-8088-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 01000
+2024-10-02 01:02:02.10 [http-nio-8088-exec-9] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - database "shopapp" has a collation version mismatch
+2024-10-02 01:02:02.10 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:02:24.56 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:02:24.56 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:02:24.58 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
+2024-10-02 01:02:30.43 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:02:30.43 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:02:30.58 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:02:33.79 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:02:33.79 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:02:34.12 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:02:34.13 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:02:34.13 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:02:34.13 [http-nio-8088-exec-8] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:02:34.13 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:02:37.89 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:02:37.90 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:02:38.07 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:02:38.07 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:02:38.07 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:02:38.07 [http-nio-8088-exec-7] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:02:38.07 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:02:55.15 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:02:55.15 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:02:55.30 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:02:59.19 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:02:59.19 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:02:59.20 [http-nio-8088-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:02:59.20 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:04:40.89 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:04:40.89 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:04:40.90 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
+2024-10-02 01:04:44.58 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:04:44.58 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:04:44.58 [http-nio-8088-exec-6] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:04:44.59 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:04:44.59 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:04:44.59 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:04:44.59 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:04:45.89 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:04:45.89 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:04:45.89 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:04:45.89 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:04:45.90 [http-nio-8088-exec-5] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:04:45.90 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:04:45.90 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:04:48.85 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/refresh-token
+2024-10-02 01:04:48.85 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/refresh-token
+2024-10-02 01:04:48.89 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/refresh-token
+2024-10-02 01:04:51.20 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:04:51.20 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:04:51.20 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
+2024-10-02 01:05:02.34 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:05:02.34 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:05:02.49 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:05:27.56 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:05:27.56 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:05:27.56 [http-nio-8088-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:05:27.56 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:05:30.77 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:05:30.77 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:05:30.92 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:05:30.93 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:05:30.93 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:05:30.93 [http-nio-8088-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:05:30.93 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:05:52.39 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:05:52.39 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:05:52.55 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:06:40.74 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:06:40.74 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:06:40.74 [http-nio-8088-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:06:40.74 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:06:41.79 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:06:41.79 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:06:41.95 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:06:41.96 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:06:41.96 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:06:41.96 [http-nio-8088-exec-10] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:06:41.96 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:06:49.08 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:06:49.08 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:06:49.23 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:06:51.52 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:06:51.52 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:06:51.52 [http-nio-8088-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:06:51.52 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:07:23.29 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:07:23.29 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:07:23.29 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:07:23.29 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:07:23.30 [http-nio-8088-exec-5] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:07:23.30 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:07:23.30 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:08:36.98 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:08:36.98 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:08:36.98 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:08:36.98 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:08:36.99 [http-nio-8088-exec-1] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:08:36.99 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:08:36.99 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:08:41.69 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/refresh-token
+2024-10-02 01:08:41.69 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/refresh-token
+2024-10-02 01:08:41.73 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/refresh-token
+2024-10-02 01:09:01.67 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/refresh-token
+2024-10-02 01:09:01.68 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/refresh-token
+2024-10-02 01:09:01.69 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/refresh-token
+2024-10-02 01:10:09.85 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:10:09.85 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:10:09.86 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
+2024-10-02 01:10:24.64 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:10:24.64 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:10:24.81 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:11:46.19 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:11:46.19 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:11:46.19 [http-nio-8088-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:11:46.19 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:11:46.38 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:11:46.38 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:11:46.39 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
+2024-10-02 01:12:33.23 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:12:33.23 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:12:33.23 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:12:33.23 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:12:33.23 [http-nio-8088-exec-2] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:12:33.24 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:12:33.24 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:12:36.52 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:12:36.52 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:12:36.52 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
+2024-10-02 01:12:47.27 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:12:47.27 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:12:47.46 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:15:04.12 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:15:04.12 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:15:04.13 [http-nio-8088-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'Authorization' for method parameter type String is not present]
+2024-10-02 01:15:04.13 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:17:15.46 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:17:15.46 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:17:15.47 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
+2024-10-02 01:17:15.50 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:17:15.50 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:17:15.51 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
+2024-10-02 01:17:44.47 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:17:44.47 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:17:44.47 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:17:44.47 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:17:44.48 [http-nio-8088-exec-3] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:17:44.48 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:17:44.48 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:17:47.00 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:17:47.00 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:17:47.00 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
+2024-10-02 01:17:57.73 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/login
+2024-10-02 01:17:57.73 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/login
+2024-10-02 01:17:57.90 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/login
+2024-10-02 01:18:14.94 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/details
+2024-10-02 01:18:14.94 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/details
+2024-10-02 01:18:14.95 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/details
+2024-10-02 01:18:24.37 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:18:24.37 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:18:24.37 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:18:24.37 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:18:24.37 [http-nio-8088-exec-7] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:18:24.37 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:18:24.38 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:18:24.39 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:18:24.39 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:18:24.39 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:18:24.39 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:18:24.40 [http-nio-8088-exec-1] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:18:24.40 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:18:24.40 [http-nio-8088-exec-10] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:18:31.18 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products/11015
+2024-10-02 01:18:31.18 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products/11015
+2024-10-02 01:18:31.20 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products/11015
+2024-10-02 01:18:31.21 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products/images/11015
+2024-10-02 01:18:31.21 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products/images/11015
+2024-10-02 01:18:31.22 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products/images/11015
+2024-10-02 01:18:36.11 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:18:36.11 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:18:36.12 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:18:36.12 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:18:36.12 [http-nio-8088-exec-5] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:18:36.12 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:18:36.12 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:18:36.93 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products/11016
+2024-10-02 01:18:36.93 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products/11016
+2024-10-02 01:18:36.93 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products/11016
+2024-10-02 01:18:36.94 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products/images/11016
+2024-10-02 01:18:36.94 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products/images/11016
+2024-10-02 01:18:36.94 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products/images/11016
+2024-10-02 01:18:39.66 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:18:39.66 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:18:39.66 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:18:39.66 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:18:39.67 [http-nio-8088-exec-2] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:18:39.67 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:18:39.67 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:18:43.97 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/users/refresh-token
+2024-10-02 01:18:43.97 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/users/refresh-token
+2024-10-02 01:18:44.00 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/users/refresh-token
+2024-10-02 01:18:44.02 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products/by-ids
+2024-10-02 01:18:44.02 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products/by-ids
+2024-10-02 01:18:44.04 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products/by-ids
+2024-10-02 01:18:47.68 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:18:47.68 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:18:47.68 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:18:47.68 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:18:47.68 [http-nio-8088-exec-5] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:18:47.69 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:18:47.69 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:21:33.60 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-02 01:21:33.61 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-02 01:21:33.61 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-02 01:25:29.36 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2024-10-02 01:25:29.38 [main] INFO  c.t.s.ShopappServerApplication - Starting ShopappServerApplication using Java 17.0.11 with PID 159684 (/home/tripleng/Workspace/Study/Code/shopapp/Shopapp/shopapp-server/target/classes started by tripleng in /home/tripleng/Workspace/Study/Code/shopapp/Shopapp/shopapp-server)
+2024-10-02 01:25:29.38 [main] INFO  c.t.s.ShopappServerApplication - No active profile set, falling back to 1 default profile: "default"
+2024-10-02 01:25:30.25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-02 01:25:30.25 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-02 01:25:30.34 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 9 JPA repository interfaces.
+2024-10-02 01:25:30.35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2024-10-02 01:25:30.35 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-10-02 01:25:30.36 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 01:25:30.36 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.OrderDetailRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 01:25:30.36 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 01:25:30.37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.ProductImageRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 01:25:30.37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.ProductRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 01:25:30.37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.RoleRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 01:25:30.37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.SocialAccountRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 01:25:30.37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.TokenRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 01:25:30.37 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.tripleng.shopappserver.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2024-10-02 01:25:30.37 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+2024-10-02 01:25:31.16 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8088 (http)
+2024-10-02 01:25:31.16 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+2024-10-02 01:25:31.17 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-02 01:25:31.17 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.25]
+2024-10-02 01:25:31.20 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-02 01:25:31.20 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1788 ms
+2024-10-02 01:25:31.45 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-02 01:25:31.50 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@74231642
+2024-10-02 01:25:31.50 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-02 01:25:31.52 [main] INFO  org.flywaydb.core.FlywayExecutor - Database: jdbc:postgresql://localhost:5432/shopapp (PostgreSQL 16.3)
+2024-10-02 01:25:31.55 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 4 migrations (execution time 00:00.018s)
+2024-10-02 01:25:31.57 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "public": 2.3
+2024-10-02 01:25:31.57 [main] INFO  o.f.core.internal.command.DbMigrate - Schema "public" is up to date. No migration necessary.
+2024-10-02 01:25:31.67 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-02 01:25:31.73 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.9.Final
+2024-10-02 01:25:31.78 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-02 01:25:31.98 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-02 01:25:32.01 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-02 01:25:32.74 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-02 01:25:32.75 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-02 01:25:33.16 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/api/v1/actuator'
+2024-10-02 01:25:33.21 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-02 01:25:33.28 [main] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-02 01:25:33.83 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4975f618, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@f9c0e80, org.springframework.security.web.context.SecurityContextHolderFilter@766e7a0f, org.springframework.security.web.header.HeaderWriterFilter@2ad7ac1a, org.springframework.web.filter.CorsFilter@157289a, org.springframework.security.web.authentication.logout.LogoutFilter@366b82ec, com.tripleng.shopappserver.filters.JwtTokenFilter@7c4663ec, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a37e02b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27330f99, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f31e2fb, org.springframework.security.web.access.ExceptionTranslationFilter@1653ae9d, org.springframework.security.web.access.intercept.AuthorizationFilter@71a4c959]
+2024-10-02 01:25:34.31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+2024-10-02 01:25:34.31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8088 (http) with context path ''
+2024-10-02 01:25:34.33 [main] INFO  c.t.s.ShopappServerApplication - Started ShopappServerApplication in 5.2 seconds (process running for 5.808)
+2024-10-02 01:25:34.78 [RMI TCP Connection(5)-192.168.22.240] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-02 01:25:34.78 [RMI TCP Connection(5)-192.168.22.240] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-10-02 01:25:34.79 [RMI TCP Connection(5)-192.168.22.240] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2024-10-02 01:25:37.37 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:25:37.37 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:25:37.37 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:25:37.37 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:25:37.43 [http-nio-8088-exec-2] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:25:37.45 [http-nio-8088-exec-2] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:25:37.47 [http-nio-8088-exec-1] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:25:38.94 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products/11015
+2024-10-02 01:25:38.94 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products/11015
+2024-10-02 01:25:38.96 [http-nio-8088-exec-3] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products/11015
+2024-10-02 01:25:38.98 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products/images/11015
+2024-10-02 01:25:38.98 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products/images/11015
+2024-10-02 01:25:39.00 [http-nio-8088-exec-4] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products/images/11015
+2024-10-02 01:25:40.98 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:25:40.98 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:25:40.98 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:25:40.98 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:25:40.99 [http-nio-8088-exec-5] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:25:40.99 [http-nio-8088-exec-6] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:25:40.99 [http-nio-8088-exec-5] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:25:42.84 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/products
+2024-10-02 01:25:42.84 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/products
+2024-10-02 01:25:42.84 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/categories
+2024-10-02 01:25:42.84 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/categories
+2024-10-02 01:25:42.85 [http-nio-8088-exec-7] INFO  c.t.s.controllers.ProductController - Get products from redis with keyword: , categoryId: 0, page: 1, limit: 12
+2024-10-02 01:25:42.85 [http-nio-8088-exec-7] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/products
+2024-10-02 01:25:42.85 [http-nio-8088-exec-8] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/categories
+2024-10-02 01:25:44.33 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Request path: /api/v1/roles
+2024-10-02 01:25:44.33 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - Begin bypass token: /api/v1/roles
+2024-10-02 01:25:44.34 [http-nio-8088-exec-9] INFO  c.t.s.filters.JwtTokenFilter - End bypass token: /api/v1/roles
